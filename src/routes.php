@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
 use Virusphp\BridgingSatusehat\ReferensiController;
 
 Route::get('/practition/{nik}', function($nik) {
