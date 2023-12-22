@@ -8,8 +8,9 @@ bridging-satusehat adalah sebuah package yang di desain untuk mempermudah penggu
 
 ## FEATURE
 
-- Custom Url
-- Generate Token Auth Otomatis
+- Custom Url (Url Suka-suka)
+- Generate Token ( Otomatis chaneling waktu akses URL BASE )
+- Akses Auth URL
 - Akses Base URL
 - Akses Consent URL (On-going)
 
@@ -98,9 +99,5 @@ KLIK TONTON UNTUK SUPORT (LIKE DAN KOMEN)
 - VIRTUAL AKUN BSI : 608082220801333
 - VIRTUAL AKUN MANDIRI : 893082220801333
 
-# Changelog
-
-
-### 2021-09-19
-
-- v1.0 Bridging SATUSEHAT New Born
+# AUTHOR
+Slamet Sugandi 
