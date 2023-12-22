@@ -24,7 +24,7 @@ composer require virusphp/bridging-satusehat
 ## Publish Config
 
 ```cmd
-php artisan vendor:publish --provider="Vclaim\BridgingSatusehat\SatusehatServiceProvider" --tag=config
+php artisan vendor:publish --provider="Virusphp\BridgingSatusehat\SatusehatServiceProvider" --tag=config
 ```
 
 ## Usage
