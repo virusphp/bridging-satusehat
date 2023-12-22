@@ -17,5 +17,15 @@
     "require": {
         "php": "^7.3|^8.0",
         "vlucas/phpdotenv": "^5.3"
+    },
+    "config": {
+    "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+        "providers": [
+            "Virusphp\\BridgingSatusehat\\SatusehatServiceProvider"
+        ]
+        }
     }
 }

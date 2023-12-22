@@ -1,6 +1,6 @@
 <?php
 
-namespace Virusphp\BridgingSatuseha;
+namespace Virusphp\BridgingSatusehat;
 
 use Illuminate\Support\ServiceProvider;
 
