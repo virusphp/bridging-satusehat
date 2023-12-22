@@ -41,7 +41,6 @@ API_SATUSEHAT_CONSENT=https://api-satusehat.dto.kemkes.go.id/consent/v1/
 CLIENT_ID_SATUSEHAT="isi dengan client_id masing2"
 CLIENT_SECRET_SATUSEHAT="isi dengan client_secret masing"
 
-
 ```
 
 ```php
