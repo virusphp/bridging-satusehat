@@ -18,7 +18,6 @@ class BridgeBase extends SimpleCurlFactory
 		$this->config = new ConfigSatusehat;
 		$this->auth = new Authentication($this->config->setUrlAuth().$this->endpointAuth, $this->config->setCredentials());
 		$this->access_token = $this->auth->setToken();
-
 	}
 	
 	public function getRequest($endpoint)
@@ -38,9 +37,4 @@ class BridgeBase extends SimpleCurlFactory
         $result = $this->request($this->config->setUrlBase().$endpoint, "PUT", $data,  $this->access_token);
         return $result;
     }
-
-
-
-
-	
 }
