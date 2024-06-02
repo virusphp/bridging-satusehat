@@ -14,7 +14,7 @@
             "email": "packercyber@gmail.com"
         }
     ],
-    "minimum-stability": "beta",
+    "minimum-stability": "stable",
     "require": {
         "php": "^7.3|^8.0",
         "vlucas/phpdotenv": "^5.3"
