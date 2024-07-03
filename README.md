@@ -46,7 +46,7 @@ CLIENT_SECRET_SATUSEHAT="isi dengan client_secret masing"
 ```php
 <?php
 // configurasi config (Support laravel 7 ke atas)
-config/vclaim.php
+config/satusehat.php
 return [
 	'api' => [
 		'endpoint_auth'  => env('API_SATUSEHAT_AUTH','ENDPOINT-KAMU'),
@@ -73,7 +73,7 @@ Class SomeController
 		$this->bridging = new BridgeBase();
 	}
 
-	// Example To use get Patient 
+	// Example To use get Patient
 	// Name of Method example
 	public function getPatient($nik)
 	{
@@ -89,14 +89,6 @@ KLIK TONTON UNTUK SUPORT (LIKE DAN KOMEN)
 
 [![Watch the video](https://yt3.ggpht.com/ytc/AMLnZu8mCU3GUNwlmATLo2gLb0K_jaWjahlc_qmbRxEl=s88-c-k-c0x00ffffff-no-rj)](https://www.youtube.com/watch?v=Gq8-YOnsR-k&t=257s)
 
-## DONASI
-
-- Saweria : https://saweria.co/setsuga
-- VIRTUAL AKUN BCA : 122082220801333
-- VIRTUAL AKUN BNI : 8807082220801333
-- VIRTUAL AKUN BRI : 112082220801333
-- VIRTUAL AKUN BSI : 608082220801333
-- VIRTUAL AKUN MANDIRI : 893082220801333
-
 # AUTHOR
-Slamet Sugandi 
+
+Slamet Sugandi
