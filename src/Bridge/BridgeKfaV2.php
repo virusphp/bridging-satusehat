@@ -16,7 +16,7 @@ class BridgeKfaV2 extends SimpleCurlFactory
 	public function __construct()
 	{
 		$this->config = new ConfigSatusehat;
-		$this->auth = new Authentication($this->config->setUrlKfaV2() . $this->endpointAuth, $this->config->setCredentials());
+		$this->auth = new Authentication($this->config->setUrlAuth() . $this->endpointAuth, $this->config->setCredentials());
 		$this->access_token = $this->auth->setToken();
 	}
 
