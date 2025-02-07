@@ -22,6 +22,8 @@ bridging-satusehat adalah sebuah package yang di desain untuk mempermudah penggu
 composer require virusphp/bridging-satusehat
 ```
 
+// configurasi for (Support laravel 7 ke atas)
+
 ## Publish Config
 
 ```cmd
@@ -37,6 +39,9 @@ php artisan vendor:publish --provider="Virusphp\BridgingSatusehat\SatusehatServi
 API_SATUSEHAT_AUTH=https://api-satusehat.kemkes.go.id/oauth2/v1/
 API_SATUSEHAT_BASE=https://api-satusehat.kemkes.go.id/fhir-r4/v1/
 API_SATUSEHAT_CONSENT=https://api-satusehat.dto.kemkes.go.id/consent/v1/
+API_SATUSEHAT_KFA=https://api-satusehat.kemkes.go.id/kfa/
+API_SATUSEHAT_KFA_V2=https://api-satusehat.kemkes.go.id/kfa-v2/
+API_SATUSEHAT_KYC=https://api-satusehat.kemkes.go.id/kyc/v1/
 
 CLIENT_ID_SATUSEHAT="isi dengan client_id masing2"
 CLIENT_SECRET_SATUSEHAT="isi dengan client_secret masing"
@@ -51,6 +56,9 @@ return [
 	'api' => [
 		'endpoint_auth'  => env('API_SATUSEHAT_AUTH','ENDPOINT-KAMU'),
 		'endpoint_base'  => env('API_SATUSEHAT_BASE','ENDPOINT-KAMU'),
+		'endpoint_kfa'  => env('API_SATUSEHAT_KFA','ENDPOINT-KAMU'),
+		'endpoint_kfa_v2'  => env('API_SATUSEHAT_KFA_V2','ENDPOINT-KAMU'),
+		'endpoint_kyc'  => env('API_SATUSEHAT_KYC','ENDPOINT-KAMU'),
 		'endpoint_consent'  => env('API_SATUSEHAT_CONSENT','ENDPOINT-KAMU'),
 		'client_id' => env('CLIENT_ID_SATUSEHAT', 'SECRET-KAMU'),
 		'client_secret' => env('CLIENT_SECRET_SATUSEHAT', 'SECRET-KAMU'),
