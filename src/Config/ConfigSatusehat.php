@@ -11,6 +11,7 @@ class ConfigSatusehat
     protected $urlConsent;
     protected $urlKfa;
     protected $urlKfaV2;
+    protected $urlKyc;
     protected $clientId;
     protected $clientSecret;
     protected $token;
@@ -27,6 +28,7 @@ class ConfigSatusehat
         $this->urlConsent = getenv('API_SATUSEHAT_CONSENT');
         $this->urlKfa = getenv('API_SATUSEHAT_KFA');
         $this->urlKfaV2 = getenv('API_SATUSEHAT_KFA_V2');
+        $this->urlKyc = getenv('API_SATUSEHAT_KYC');
         $this->clientId = getenv('CLIENT_ID_SATUSEHAT');
         $this->clientSecret = getenv('CLIENT_SECRET_SATUSEHAT');
     }
@@ -54,6 +56,11 @@ class ConfigSatusehat
     public function setUrlKfaV2()
     {
         return $this->urlKfaV2;
+    }
+
+    public function setUrlKyc()
+    {
+        return $this->urlKyc;
     }
 
     public function setClientId()
