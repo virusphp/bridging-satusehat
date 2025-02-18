@@ -13,6 +13,7 @@ bridging-satusehat adalah sebuah package yang di desain untuk mempermudah penggu
 - Akses Auth URL
 - Akses Base URL
 - Akses Consent URL (On-going)
+- KYC Generator (with RSA key)
 
 ## Installation
 
