@@ -90,6 +90,56 @@ Class SomeController
 		return $this->bridging->getRequest($endpoint);
 	}
 }
+
+```
+
+```php
+<?php
+// Example Controller bridging to KYC  (PHP 8 & LARAVEL 8 Keatas)
+use Virusphp\BridgingSatusehat\Bridge\BridgeKyc;
+use Virusphp\BridgingSatusehat\Foundation\Handler\KYCgenerator;
+
+Class KYCController
+{
+	use KYCgenerator;
+
+	protected $bridgingKYC;
+
+	public function __construct()
+	{
+		$this->bridgingKYC = new BridgeKyc();
+	}
+
+	// Example To use KYC
+	// Name of Method example
+	public function generateKYC()
+	{
+		$keyPair = $this->generateRSAKeyPair();
+        $publicKey = $keyPair['publicKey'];
+        $privateKey = $keyPair['privateKey'];
+
+		$data['agent_name'] = "Admin";
+        $data['agent_nik'] = "3375030xxxxxxxx";
+        $data['public_key'] = $publicKey;
+
+		$jsonData = json_encode($data);
+
+		$pubPEM = "-----BEGIN PUBLIC KEY-----
+			// SEUAIKAN KEY PUBLIC DARI SATUSEHAT KYC
+			-----END PUBLIC KEY-----"
+
+        $encryptedPayload = $this->encryptMessage($jsonData, $pubPEM);
+
+		$endpoint = "generate-url";
+
+		$response = $this->satusehat->postRequest($endpoint, $encryptedPayload);
+
+        $result = $this->decryptMessage($response, $privateKey);
+
+        return $result;
+	}
+}
+
 ```
 
 ## CHANEL YOUTUBE
